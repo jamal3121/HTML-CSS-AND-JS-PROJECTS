@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkbox</title>
+</head>
+<style>
+    .container{
+
+    }
+    .container input{
+        display: none;
+    }
+    .container .nothn{
+        display: none;
+    }
+    input:checked ~ .nothn{
+        display: block;
+    }
+</style>
+<body>
+    <div class="container">
+        <input type="checkbox" name="" id="forcheck">
+        <label for="forcheck">mainmenu</label>
+        <ul class="nothn">
+            <li>this is nohin</li>
+            <li>this is nohin</li>
+            <li>this is nohin</li>
+        </ul>
+    </div>
+</body>
+</html>
